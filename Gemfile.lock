@@ -69,7 +69,6 @@ GEM
       zeitwerk (~> 2.3)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
-    connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.4)
     erubi (1.12.0)
@@ -138,20 +137,11 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0)
     rake (13.1.0)
-    redis (5.0.8)
-      redis-client (>= 0.17.0)
-    redis-client (0.19.0)
-      connection_pool
     sentry-rails (5.15.0)
       railties (>= 5.0)
       sentry-ruby (~> 5.15.0)
     sentry-ruby (5.15.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-    sidekiq (7.2.0)
-      concurrent-ruby (< 2)
-      connection_pool (>= 2.3.0)
-      rack (>= 2.2.4)
-      redis-client (>= 0.14.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -174,9 +164,7 @@ PLATFORMS
 DEPENDENCIES
   puma (>= 6, < 7)
   rails (~> 6.1.7.6)
-  redis
   sentry-test-bug!
-  sidekiq (>= 7, < 8)
 
 RUBY VERSION
    ruby 2.7.5p203
