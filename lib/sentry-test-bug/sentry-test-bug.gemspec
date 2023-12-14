@@ -9,4 +9,5 @@ Gem::Specification.new do |spec|
   spec.authors       = ''
 
   spec.add_dependency 'sentry-ruby', '>= 5', '< 6'
+  spec.add_dependency 'sentry-rails', '>= 5', '< 6'
 end
